@@ -1,0 +1,2 @@
+# MySitePy
+Django Personal Blog
