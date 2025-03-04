@@ -1,8 +1,7 @@
-from django.urls import path
-
-from blog import views
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path("", views.PostView.as_view(), name='home'),
-    path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail")
+    path('admin/', admin.site.urls),
+    path('home', include('blog.urls'))
 ]
